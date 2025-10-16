@@ -147,7 +147,7 @@ int agc_close(agc_t* agc)
 }
 
 // *******************************************************************************************
-int agc_n_sample(const agc_t* agc)
+int agc_n_sample(const agc_t* agc) noexcept
 {
 	if (!agc)
 		return -1;

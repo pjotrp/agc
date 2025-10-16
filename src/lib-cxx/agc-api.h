@@ -127,7 +127,7 @@ EXTERNC int agc_close(agc_t* agc);
 
 /**
  * Get the length of a contig. Return an error if _name_ is not present, or if
- * _name_ is not unique but _sample_ is NULL, 
+ * _name_ is not unique but _sample_ is NULL,
  *
  * @param agc      agc handle
  * @param sample   sample name; can be NULL
@@ -154,7 +154,7 @@ EXTERNC int agc_get_ctg_seq(const agc_t *agc, const char *sample, const char *na
  *
  * @return the number of samples
  */
-EXTERNC int agc_n_sample(const agc_t* agc);
+EXTERNC int agc_n_sample(const agc_t* agc) noexcept;
 
 /**
  * @param agc      agc handle
