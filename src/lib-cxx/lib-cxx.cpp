@@ -341,5 +341,12 @@ int agc_list_destroy(char* sample) noexcept
 	return 0;
 }
 
+// *******************************************************************************************
+int agc_string_destroy(char *sample) noexcept
+{
+	free(sample);
+
+	return 0;
+}
 
 // EOF
